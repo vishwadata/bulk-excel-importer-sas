@@ -5,9 +5,9 @@ working correct methods you can use any of these three */
 
 %LET PATH=/path/BANKING/REPORTS/CASA;
 
-x "ls &PATH/*.xlsx > &PATH/excel1.txt";
-x "find &PATH -name '*.xlsx' > &PATH/excel2.txt";
-x "dir /b &PATH/*.xlsx > &PATH/excel3.txt";
+x "ls &PATH/*.xlsx > &PATH/excel1.txt";        /* Unix/Linux */
+x "find &PATH -name '*.xlsx' > &PATH/excel2.txt"; /* Unix/Linux (recursive) */
+x "dir /b &PATH/*.xlsx > &PATH/excel3.txt";    /* Windows */
 
 data excelfile_list;
 infile "&PATH/excel1.txt" delimiter=" ";
