@@ -107,7 +107,7 @@ The macro loops from `1` to `&cnt`, building each file path dynamically (`&&file
 
 ---
 
-## 👤 Author
+## Author
 
 **Vishwa Bharath**
 Senior SAS Developer & Data Analyst 
